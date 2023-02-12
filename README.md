@@ -32,7 +32,7 @@ This application was designed to be run at the end of each month and concludes w
 
 Feature engineering and differencing of non-static variables were used to forecast a multivariate time series using a LSTM Deep Learning Model.
 
-There was a total of 4 inputs with a window of 5 months. Future iterations of this project could explore utilizing various economic and currency basket features.
+There was a total of 6 inputs with a window of 7 months. Future iterations of this project could explore utilizing various economic and currency basket features.
 
 # TABLE OF CONTENTS
 
@@ -40,11 +40,11 @@ There was a total of 4 inputs with a window of 5 months. Future iterations of th
 
 # MODEL EVALUATIONS
 MSE: .02
-RMSE: .14
+RMSE: .13
 RRMSE: .04
 MAE .10
 RMAE: .03
-EV: .81
+EV: .84
 
 
 While the EV of the model is quite high and the Relative RMSE and MAE are quite low, in the domain of currency trading, the margin of error is too high for a predictive valuation model. In FX trading, the lowest change in price can be .00001 and retail trades are commonly conducted using targets in pips (.0001). This means that a RMSE or MAE greater than .1000 would mean a risk of 1000 pips, far too large of a risk margin for any reasonable position sizing.
