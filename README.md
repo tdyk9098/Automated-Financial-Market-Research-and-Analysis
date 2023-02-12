@@ -30,7 +30,7 @@ The code also utilizes the FRED API and extracts the following monthly economic 
 
 This application was designed to be run at the end of each month and concludes with a deep learning model predicting the close price of the following month.
 
-Feature engineering and differencing of non-static variables were used to forecast a multivariate time series using a LSTM Deep Learning Model. 
+Feature engineering and differencing of non-static variables were used to forecast a multivariate time series using a LSTM Deep Learning Model.
 
 There was a total of 4 inputs with a window of 5 months. Future iterations of this project could explore utilizing various economic and currency basket features.
 
@@ -49,6 +49,4 @@ EV: .81
 
 While the EV of the model is quite high and the Relative RMSE and MAE are quite low, in the domain of currency trading, the margin of error is too high for a predictive valuation model. In FX trading, the lowest change in price can be .00001 and retail trades are commonly conducted using targets in pips (.0001). This means that a RMSE or MAE greater than .1000 would mean a risk of 1000 pips, far too large of a risk margin for any reasonable position sizing.
 
-However, using the extreme upper and lower bound as a mean reverting trading signal may be a derivative application for this code. 
-
-
+However, using the extreme upper and lower bound as a mean reverting trading signal may be a derivative application for this code. Note: the USD/PLN monthly close has an Augmented Dickey Fuller test p value of .20, the close data itself is not mean reverting. 
