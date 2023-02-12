@@ -28,7 +28,7 @@ The code also utilizes the FRED API and extracts the following monthly economic 
 -	USA Export Value in USD, non-adjusted
 -	USA Net Value in USD, non-adjusted
 
-This application was designed to be run at the end of each month and concludes with a deep learning model predicting the close price of the following month.
+This application was designed to be run at the end of each month and concludes with a deep learning model predicting the close price of the following month. Note: my email and my API Key were both removed after running the code and prior to uploading to the repository.
 
 Feature engineering and differencing of non-static variables were used to forecast a multivariate time series using a LSTM Deep Learning Model.
 
